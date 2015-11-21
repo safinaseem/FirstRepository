@@ -1,1 +1,67 @@
-<h1>Testing Git</h1>>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: #F80000 ;
+
+}
+
+h1, #pressButton,#resetButton,button{
+    color: orange;
+    text-align: center;
+}
+
+p{
+color: yellow;
+text-align: center;
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<h1>Content Information</h1>
+<p>This Page Is For Fun</p>
+
+<p id="demo">Button Has Been Pressed 0 Times</p>
+
+<script>
+var index = 0;
+function myFunction() {
+
+index++;
+
+if(index == 1){
+    document.getElementById('demo').innerHTML = 'Button Has Been Pressed '+index+' Time';
+}
+else{
+ document.getElementById('demo').innerHTML = 'Button Has Been Pressed '+index+' Times';
+}
+
+}
+
+function reset() {
+index = 0;
+document.getElementById('demo').innerHTML = 'Button Has Been Pressed 0 Times';
+
+}
+</script>
+
+<div id= "pressButton">
+<button type="button" onclick="myFunction()">Increment Counter</button>
+</div>
+
+<div id= "resetButton">
+<button type="button" onclick="reset()">Reset Count</button>
+</div>
+
+</body>
+
+<footer>
+  <p>Posted by: Safi Naseem<br>Contact information:<br> <a href="mailto:SafiNaseem@hotmail.com">SafiNaseem@hotmail.com.com</a></p>
+</footer>
+</html>
