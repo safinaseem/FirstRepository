@@ -7,7 +7,7 @@ body {
 
 }
 
-h1, #pressButton,#resetButton,button{
+h1, #pressButton,#resetButton,#decrementButton,#Alert,button{
     color: orange;
     text-align: center;
 }
@@ -31,6 +31,7 @@ text-align: center;
 
 <script>
 var index = 0;
+
 function myFunction() {
 
 index++;
@@ -49,14 +50,49 @@ index = 0;
 document.getElementById('demo').innerHTML = 'Button Has Been Pressed 0 Times';
 
 }
+
+
+function decrement(){
+	
+	if (index >= 0){
+		index--;
+	}
+
+if (index < 0){
+     document.getElementById('demo').innerHTML = 'Button Has Been Pressed 0 Times -- Already At Zero';
+
+	}
+
+
+if(index == 1){
+    document.getElementById('demo').innerHTML = 'Button Has Been Pressed '+index+' Time';
+}
+
+if (index >= 0){
+ document.getElementById('demo').innerHTML = 'Button Has Been Pressed '+index+' Times';
+}
+
+}
+
+function alertfunct() {
+    alert("Popup up Message");
+}
 </script>
 
 <div id= "pressButton">
 <button type="button" onclick="myFunction()">Increment Counter</button>
 </div>
-
+<div id= "decrementButton">
+<button type="button" onclick="decrement()">Decrement</button>
+</div>
 <div id= "resetButton">
 <button type="button" onclick="reset()">Reset Count</button>
+</div>
+<br>
+<br>
+
+<div id ="Alert">
+	<button onclick="alertfunct()">Alert PopUp</button>	
 </div>
 
 </body>
