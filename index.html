@@ -7,9 +7,25 @@ body {
 
 }
 
-h1, #pressButton,#resetButton,#decrementButton,#Alert,button{
-    color: orange;
+h1{
+text-align: center;
+color: yellow;
+
+}
+
+ #pressButton,#resetButton,#decrementButton,#Alert,button{
+    
+background-color: #ffa600  ;
+    border: none;
+    color: white;
+    padding: 2px 2px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
 }
 
 p{
@@ -78,10 +94,12 @@ function alertfunct() {
     alert("Popup up Message");
 }
 </script>
+<div style="text-align:center;">
 
 <div id= "pressButton">
 <button type="button" onclick="myFunction()">Increment Counter</button>
 </div>
+</br>
 <div id= "decrementButton">
 <button type="button" onclick="decrement()">Decrement</button>
 </div>
@@ -93,6 +111,8 @@ function alertfunct() {
 
 <div id ="Alert">
 	<button onclick="alertfunct()">Alert PopUp</button>	
+</div>
+
 </div>
 
 </body>
