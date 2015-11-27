@@ -3,33 +3,44 @@
 <head>
 <style>
 body {
-    background-color: #F80000 ;
+    background-color: #008000;
+
 
 }
 
 h1{
 text-align: center;
-color: yellow;
+color: #8cff66;
 
 }
 
  #pressButton,#resetButton,#decrementButton,#Alert,button{
     
-background-color: #ffa600  ;
-    border: none;
-    color: white;
-    padding: 2px 2px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+background-color: #ff6633;
+     display: inline-block;
+    font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff6633;
+ border-radius: 5px;
 
+  border: none;
+   box-shadow: 0 5px #991f00;}
+
+button:hover {background-color: #ff4000}
+
+.button:active {
+  background-color: #cc3300;
+  box-shadow: 0 5px #cc3300;
+  transform: translateY(4px);
 }
 
+
 p{
-color: yellow;
+color: #8cff66;
 text-align: center;
 
 }
@@ -97,20 +108,23 @@ function alertfunct() {
 <div style="text-align:center;">
 
 <div id= "pressButton">
-<button type="button" onclick="myFunction()">Increment Counter</button>
+<button type="button" class="button" onclick="myFunction()">Increment Counter</button>
+</div>
+<br><br>
+<div id= "decrementButton">
+<button type="button" class="button" onclick="decrement()">Decrement Counter</button>
+
 </div>
 </br>
-<div id= "decrementButton">
-<button type="button" onclick="decrement()">Decrement</button>
-</div>
+<br>
 <div id= "resetButton">
-<button type="button" onclick="reset()">Reset Count</button>
+<button type="button" class="button" onclick="reset()">Reset Count</button>
 </div>
-<br>
-<br>
+</br>
+</br>
 
 <div id ="Alert">
-	<button onclick="alertfunct()">Alert PopUp</button>	
+	<button  class="button" onclick="alertfunct()">Alert PopUp</button>	
 </div>
 
 </div>
@@ -118,6 +132,6 @@ function alertfunct() {
 </body>
 
 <footer>
-  <p>Posted by: Safi Naseem<br>Contact information:<br> <a href="mailto:SafiNaseem@hotmail.com">SafiNaseem@hotmail.com</a></p>
+  <p>Posted by: Safi Naseem<br>Contact information:<br> <a href="mailto:SafiNaseem@hotmail.com" style="color: #8cff66" >SafiNaseem@hotmail.com</a></p>
 </footer>
 </html>
